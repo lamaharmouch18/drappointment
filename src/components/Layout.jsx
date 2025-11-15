@@ -1,30 +1,23 @@
-// REHAM
+// REHAM & LAMA - Layout wrapper (Navbar + Footer around pages)
 
 import React from "react";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 function Layout({ children }) {
   return (
-    <div>
+    <div className="min-h-screen flex flex-col">
       {/* Top navigation bar */}
       <Navbar />
 
-      {/* Main page content */}
-      <main style={{ minHeight: "70vh" }}>{children}</main>
+      {/* Page content */}
+      <main className="flex-1">{children}</main>
 
-      {/* Simple footer */}
-      <footer
-        style={{
-          marginTop: "2rem",
-          padding: "1rem",
-          textAlign: "center",
-          backgroundColor: "#f4f4f4",
-        }}
-      >
-        <small>© 2024 DrAppointment – Demo project</small>
-      </footer>
+      {/* Footer */}
+      <Footer />
     </div>
   );
 }
 
 export default Layout;
+
