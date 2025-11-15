@@ -1,5 +1,3 @@
-// REHAM
-
 function DoctorCard({ doctor }) {
   return (
     <div className="bg-white shadow rounded-lg p-4">
