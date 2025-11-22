@@ -1,5 +1,3 @@
-// Assigned to Reham
-// src/components/SectionHeader.jsx
 
 function SectionHeader({ eyebrow, title, highlight, subtitle, align = "center" }) {
   const alignClass =
