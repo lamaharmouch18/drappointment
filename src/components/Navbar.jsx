@@ -1,5 +1,3 @@
-// Assigned to Lama
-// src/components/Navbar.jsx
 
 import { NavLink, useNavigate } from "react-router-dom";
 import { HeartPulse } from "lucide-react";
@@ -76,3 +74,4 @@ export default function Navbar() {
     </header>
   );
 }
+
