@@ -1,4 +1,5 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 import { useState } from "react";
 import { HeartPulse } from "lucide-react";
 
@@ -104,6 +105,8 @@ function Login() {
         </div>
       )}
 =======
+=======
+>>>>>>> Stashed changes
 // REHAM
 
 function Login() {
@@ -119,6 +122,9 @@ function Login() {
           Login
         </button>
       </form>
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     </div>
   );
