@@ -1,3 +1,6 @@
+// Assigned to Reham
+// src/pages/Contact.jsx
+
 import { useEffect, useState } from "react";
 import SectionHeader from "../components/SectionHeader.jsx";
 import { doctors } from "../data.js";
@@ -40,7 +43,7 @@ function Contact() {
   const [message, setMessage] = useState("");
   const [toast, setToast] = useState("");
 
-  // 👉 Scroll to form when clicking "Book Appointment"
+  // Scroll to form when clicking "Book Appointment"
   useEffect(() => {
     const shouldScroll = localStorage.getItem("scrollToAppointment");
     if (shouldScroll === "true") {
@@ -52,7 +55,7 @@ function Contact() {
     }
   }, []);
 
-  // 👉 Handle form submit with validation
+  // Handle form submit with validation
   const handleSubmit = () => {
     if (!fullName || !phone || !email || !doctor || !date || !time) {
       setToast("⚠ Please fill all required fields.");
@@ -66,7 +69,6 @@ function Contact() {
   return (
     <div className="py-12 sm:py-16 w-full">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        
         <SectionHeader
           title="Get In"
           highlight="Touch"
@@ -114,7 +116,9 @@ function Contact() {
               {/* FULL NAME + PHONE */}
               <div className="grid gap-4 sm:grid-cols-2">
                 <div>
-                  <label className="text-xs font-medium text-slate-700">Full Name</label>
+                  <label className="text-xs font-medium text-slate-700">
+                    Full Name
+                  </label>
                   <input
                     value={fullName}
                     onChange={(e) => setFullName(e.target.value)}
@@ -125,7 +129,9 @@ function Contact() {
                 </div>
 
                 <div>
-                  <label className="text-xs font-medium text-slate-700">Phone</label>
+                  <label className="text-xs font-medium text-slate-700">
+                    Phone
+                  </label>
                   <input
                     value={phone}
                     onChange={(e) => setPhone(e.target.value)}
@@ -139,7 +145,9 @@ function Contact() {
               {/* EMAIL + DOCTOR */}
               <div className="grid gap-4 sm:grid-cols-2">
                 <div>
-                  <label className="text-xs font-medium text-slate-700">Email</label>
+                  <label className="text-xs font-medium text-slate-700">
+                    Email
+                  </label>
                   <input
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
@@ -150,7 +158,9 @@ function Contact() {
                 </div>
 
                 <div>
-                  <label className="text-xs font-medium text-slate-700">Select Doctor</label>
+                  <label className="text-xs font-medium text-slate-700">
+                    Select Doctor
+                  </label>
                   <select
                     value={doctor}
                     onChange={(e) => setDoctor(e.target.value)}
@@ -167,7 +177,9 @@ function Contact() {
               {/* DATE + TIME */}
               <div className="grid gap-4 sm:grid-cols-2">
                 <div>
-                  <label className="text-xs font-medium text-slate-700">Preferred Date</label>
+                  <label className="text-xs font-medium text-slate-700">
+                    Preferred Date
+                  </label>
                   <input
                     value={date}
                     onChange={(e) => setDate(e.target.value)}
@@ -177,7 +189,9 @@ function Contact() {
                 </div>
 
                 <div>
-                  <label className="text-xs font-medium text-slate-700">Preferred Time</label>
+                  <label className="text-xs font-medium text-slate-700">
+                    Preferred Time
+                  </label>
                   <input
                     value={time}
                     onChange={(e) => setTime(e.target.value)}
@@ -218,7 +232,8 @@ function Contact() {
           <div className="fixed bottom-6 right-6 bg-white shadow-xl rounded-2xl px-6 py-4 border">
             {toast}
             <p className="text-sm text-slate-600">
-              {toast.includes("✔") && "We'll contact you shortly to confirm your appointment."}
+              {toast.includes("✔") &&
+                "We'll contact you shortly to confirm your appointment."}
             </p>
           </div>
         )}
