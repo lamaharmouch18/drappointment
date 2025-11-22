@@ -1,4 +1,5 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 // src/pages/Doctors.jsx
 
 import SectionHeader from "../components/SectionHeader.jsx";
@@ -22,6 +23,8 @@ function Doctors() {
           ))}
         </div>
 =======
+=======
+>>>>>>> Stashed changes
 // REHAM
 
 import { doctors } from "../data/mockData";
@@ -36,6 +39,9 @@ function Doctors() {
         {doctors.map((d) => (
           <DoctorCard key={d.id} doctor={d} />
         ))}
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       </div>
     </div>
